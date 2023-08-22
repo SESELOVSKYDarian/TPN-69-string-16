@@ -14,13 +14,12 @@ int main()
 string InsertarBarraBaja(string f)
 {
     string s="_";
-    for (int i=i; i<f.size(); i++)
+    for (int i=i; i<f.size(); i+=2)
     {
         if (f[i]==' ')
         {
            f.erase (i, 1);
            f.insert (i, s);
-           i++;
         }
     }
     return f;
